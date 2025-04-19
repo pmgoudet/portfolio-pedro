@@ -12,8 +12,8 @@ const Header = () => {
   }
 
   return (
-    <div className='md:flex md:items-center md:justify-between md:m-8 lg:mx-32'>
-      <div className="flex m-6 mt-0 pt-10 justify-between items-center md:m-0">
+    <div className='md:flex md:items-center md:justify-between md:m-8 md:mt-0 md:pt-12 lg:mx-32'>
+      <div className="flex m-6 mt-0 pt-10 md:p-0 justify-between items-center md:m-0">
         <Logo />
         <div className={`tham tham-e-squeeze tham-w-8 z-10  ${activeBurger ? 'tham-active' : ''}`} onClick={toggleBurger}>
           <div className="tham-box md:hidden ">
