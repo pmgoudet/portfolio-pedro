@@ -1,5 +1,5 @@
 import SocialIcons from './SocialIcons';
-import Darkmode from './darkmode';
+import Darkmode from './Darkmode';
 
 interface NavBarProps {
   width: string;
@@ -14,7 +14,7 @@ function NavBar(props: NavBarProps) {
       <nav className="text-right m-6 mt-32 md:m-0 md:flex md:items-center md:gap-8">
         <ul className='md:flex gap-6 lg:gap-8'>
           {menuNavBar.map(item =>
-            <li className="mb-6 md:mb-0 dark:text-white" key={item}>
+            <li className="mb-6 md:mb-0  dark:text-white" key={item}>
               <a href='#' className=''>
                 {item}
               </a>

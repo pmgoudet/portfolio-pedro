@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Logo from './logo';
 import NavBar from './Navbar';
+import Logo from './Logo';
 
 
 const Header = () => {

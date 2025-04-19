@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import logoLight from '../assets/img/logo-fundoclaro.svg';
 import logoDark from '../assets/img/logo-fundoescuro.svg';
 
+
+
 const Logo = () => {
   const [isDark, setIsDark] = useState(false);
 
