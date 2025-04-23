@@ -8,8 +8,8 @@ const SocialIcons = ({ showOnMobile = true }) => {
 
   return (
     <div className={containerClasses}>
-      <a href=""><img src={githubIcon} alt="GitHub Icon" className='h-10' /></a>
-      <a href=""><img src={linkedinIcon} alt="LinkedIn Icon" className='h-10' /></a>
+      <a href=""><img src={githubIcon} alt="GitHub Icon" className='h-10 lg:h-6' /></a>
+      <a href=""><img src={linkedinIcon} alt="LinkedIn Icon" className='h-10 lg:h-6' /></a>
     </div>
   );
 };
