@@ -11,6 +11,13 @@ module.exports = {
         'dark-color': 'var(--bg-dark-color)',
       }
     },
+    screens: {
+      sm: '640px',// celulares
+      md: '768px',// tablets
+      lg: '1025px',// laptops menores, iPad paisagem
+      xl: '1426px',  // desktops grandes
+      '2xl': '1536px'// monitores full HD+
+    }
   },
   plugins: [
     require('tailwind-hamburgers'),

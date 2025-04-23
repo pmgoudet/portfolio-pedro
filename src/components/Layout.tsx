@@ -1,7 +1,6 @@
 import { ReactNode } from "react";
 import Header from "./Header";
 import SeparatorLine from "./SeparatorLine";
-import Hero from "./Hero";
 
 
 type LayoutProps = {
@@ -13,7 +12,6 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="dark:bg-dark-color">
       <Header />
       <SeparatorLine />
-      <Hero />
       <main className="flex-1">{children}</main>
     </div>
   );

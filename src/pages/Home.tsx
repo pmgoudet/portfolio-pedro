@@ -1,9 +1,10 @@
 import Layout from "../components/Layout";
+import Hero from "../components/Hero";
 
 const App = () => {
   return (
     <Layout>
-      < p className="m-4" > ah va a merda</p >
+      <Hero />
     </Layout>
   );
 };

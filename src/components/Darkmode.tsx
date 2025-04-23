@@ -19,7 +19,7 @@ function Darkmode() {
   }
 
   return (
-    <img className='ml-auto mt-20 md:m-0' src={darkModeOn ? lightModeIcon : darkModeIcon} alt="DarkMode Icon" onClick={toggleDarkMode} />
+    <img className='ml-auto mt-20 md:m-0 cursor-pointer duration-150 lg:hover:opacity-70' title="DarkMode On/Off" src={darkModeOn ? lightModeIcon : darkModeIcon} alt="DarkMode Icon" onClick={toggleDarkMode} />
   )
 }
 
