@@ -7,11 +7,7 @@ import SeparatorLine from "./SeparatorLine";
 const Header = () => {
 
   const [activeBurger, setActiveBurger] = useState(false);
-
-  const toggleBurger = () => {
-    setActiveBurger(!activeBurger);
-  }
-
+  const toggleBurger = () => { setActiveBurger(!activeBurger); }
   const navRef = useRef<HTMLDivElement>(null);
   const burgerRef = useRef<HTMLDivElement>(null);
 
@@ -53,7 +49,7 @@ const Header = () => {
           <NavBar width={activeBurger ? 'w-3/4' : 'w-0'} />
         </div>
       </div>
-      <SeparatorLine />
+      <SeparatorLine width='w-full' />
     </header>
   );
 };

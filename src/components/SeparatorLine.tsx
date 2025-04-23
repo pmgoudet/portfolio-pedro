@@ -1,6 +1,10 @@
-function SeparatorLine() {
+interface SeparatorLineProps {
+  width?: string;
+}
+
+const SeparatorLine = ({ width }: SeparatorLineProps) => {
   return (
-    <div className="h-[2px] w-full bg-gradient-to-r from-[#8F288D] to-[#682F90]" />
+    <div className={`h-[2px] m-auto bg-gradient-to-r from-[#8F288D] to-[#682F90] ${width || 'w-[90vw]'}`} />
   )
 }
 
