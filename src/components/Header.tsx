@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import NavBar from './Navbar';
 import Logo from './Logo';
 import SeparatorLine from "./SeparatorLine";
@@ -12,6 +12,24 @@ const Header = () => {
     setActiveBurger(!activeBurger);
   }
 
+  const navRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (navRef.current && !navRef.current.contains(event.target as Node)) {
+        setActiveBurger(false);
+      }
+    };
+
+    if (activeBurger) {
+      document.addEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [activeBurger]);
+
   return (
     <header className='fixed top-0 left-0 w-full z-50 bg-white dark:bg-dark-color'>
       <div className=' md:relative md:w-auto md:flex md:items-center md:justify-between md:mx-12 md:mb-8 md:mt-0 md:pt-12 lg:mx-32 lg:pt-2 lg:my-6 2xl:mx-60'>
@@ -23,7 +41,7 @@ const Header = () => {
             </div>
           </div >
         </div >
-        <div>
+        <div ref={navRef}>
           <NavBar width={activeBurger ? 'w-3/4' : 'w-0'} />
         </div>
       </div>

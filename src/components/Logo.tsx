@@ -33,7 +33,7 @@ const Logo = () => {
     <img
       src={isDark ? logoDark : logoLight}
       alt="Logotipo Pedro Goudet"
-      className='w-xl md:w-40 cursor-pointer'
+      className='w-40 md:w-40 cursor-pointer'
     />
   );
 };
