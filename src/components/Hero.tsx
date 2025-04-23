@@ -7,7 +7,7 @@ import ArrowDown from "../components/ArrowDown";
 function Hero() {
   return (
     <div >
-      <div className="m-8 pt-32 md:m-12 md:pt-28 lg:pt-32 lg:mt-0 lg:mx-32 lg:mb-4 lg:flex lg:gap-16 lg:items-center lg:w-auto 2xl:mx-60 2xl:mb-16">
+      <div className="m-8 pt-24 md:m-12 md:pt-28 lg:pt-32 lg:mt-0 lg:mx-32 lg:mb-4 lg:flex lg:gap-16 lg:items-center lg:w-auto 2xl:mx-60 2xl:mb-16">
         <div className="lg:w-1/2">
           <div>
             <p className="text-2xl font-semibold dark:text-white md:text-4xl lg:text-3xl">Bonjour, je suis</p>
