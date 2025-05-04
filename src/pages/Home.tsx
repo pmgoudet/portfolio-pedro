@@ -1,14 +1,14 @@
 import Layout from "../components/Layout";
 import Hero from "../components/Hero";
 import SeparatorLine from "../components/SeparatorLine";
-import SkillCards from "../components/SkillCards";
+import Project from "../components/Project";
 
 const App = () => {
   return (
     <Layout>
       <Hero />
       <SeparatorLine />
-      <SkillCards />
+      <Project title="Minutos Telecom" />
     </Layout>
   );
 };
