@@ -8,7 +8,7 @@ const App = () => {
     <Layout>
       <Hero />
       <SeparatorLine />
-      <Project title="Minutos Telecom" />
+      <Project title="Minutos Telecom" subtitle="Website completo da concepção ao frontend." />
     </Layout>
   );
 };
