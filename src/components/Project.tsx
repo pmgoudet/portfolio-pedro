@@ -25,7 +25,7 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
     <div className="shadow-lg max-w-96 ">
 
       {/* HOVER */}
-      <div className={`relative w-full h-40 group overflow-hidden box-border bg-[url(${img})] bg-cover`}>
+      <div className={`relative w-full h-40 group overflow-hidden box-border bg-cover`} style={{ backgroundImage: `url(${img})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity p-2 hidden lg:flex">
           <p>{description}</p>
         </div>
