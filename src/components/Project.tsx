@@ -1,7 +1,4 @@
 // import React from 'react';
-import html from '../assets/icon/html-icon-hover.svg'
-import css from '../assets/icon/css-icon-hover.svg'
-import js from '../assets/icon/javascript-icon-hover.svg'
 import iconDownArrow from '../assets/icon/arrow-down.svg'
 import Button from './Button'
 import { useState } from 'react'
@@ -11,12 +8,12 @@ type ProjectProps = {
   subtitle: string;
   description: string;
   img: string;
-  // technologies: Array<string>;
+  technologies: Array<string>;
 }
 
 const Project = ({ title, subtitle, description, img, technologies }: ProjectProps) => {
 
-  const icons: string[] = [html, css, js]
+  const icons: string[] = technologies;
 
   const [openProject, setOpenProject] = useState<boolean>(false)
 

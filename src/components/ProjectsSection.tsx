@@ -1,3 +1,7 @@
+import html from '../assets/icon/html-icon-hover.svg'
+import css from '../assets/icon/css-icon-hover.svg'
+import js from '../assets/icon/javascript-icon-hover.svg'
+
 import Project from "./Project";
 
 function ProjectSection() {
@@ -7,7 +11,8 @@ function ProjectSection() {
       <Project
         title="Minutos Telecom"
         subtitle="Site institutionnel responsive et optimisé." description="Développement front-end responsive avec CSS modulaire, intégration d'APIs, validation de formulaires et optimisation SEO, en privilégiant l’accessibilité et la maintenance."
-        img="/img/print-minutos.jpg" />
+        img="/img/print-minutos.jpg"
+        technologies={[html, css, js]} />
     </section>
   )
 }
