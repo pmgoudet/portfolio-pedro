@@ -39,7 +39,7 @@ const Button: React.FC<ButtonProps> = ({
   if (variant === 'primary-sm') {
     return (
       <div className="inline-block p-[2px] rounded-md bg-gradient-primary shadow-md">
-        <div className="bg-white dark:bg-dark-color rounded-md lg:over:opacity-90 py-0">
+        <div className="bg-white rounded-md lg:over:opacity-90 py-0">
           <button
             className={`w-full h-full bg-white text-sm rounded-md text-gradient-primary px-2  ${baseClasses} ${disabledClasses}`}
             onClick={onClick}
