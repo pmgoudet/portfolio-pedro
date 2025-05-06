@@ -22,7 +22,7 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
   }
 
   return (
-    <div className="shadow-lg max-w-96 ">
+    <div className="shadow-xl md:w-[45%] lg:w-1/4">
 
       {/* HOVER */}
       <div className={`relative w-full h-40 group overflow-hidden box-border bg-cover`} style={{ backgroundImage: `url(${img})` }}>
