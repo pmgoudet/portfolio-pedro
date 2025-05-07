@@ -37,10 +37,10 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
   }, []);
 
   return (
-    <div className="shadow-xl md:w-[45%] lg:duration-300 lg:w-1/4 lg:hover:scale-110" ref={projectRef}>
+    <div className="shadow-xl md:w-[45%] lg:duration-300 xl:w-[30%] lg:hover:scale-110" ref={projectRef}>
 
       {/* HOVER */}
-      <div className={`relative w-full h-44 group overflow-hidden box-border  bg-cover bg-center`} style={{ backgroundImage: `url(${img})` }}>
+      <div className={`relative w-full h-48 group overflow-hidden box-border  bg-cover bg-center`} style={{ backgroundImage: `url(${img})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity p-3 hidden lg:flex lg:flex-col justify-between">
           <p className='text-sm font-light'>{description}</p>
           <div className="flex gap-4 justify-end">
@@ -51,7 +51,7 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
       </div>
 
       <div className="bg-white relative">
-        <div className="">
+        <div className='md:min-h-32'>
           <div className="flex justify-between items-center">
             <h3 className="p-2 text-lg font-semibold">{title}</h3>
             <div className="p-2 flex gap-2 justify-end items-end ">
@@ -66,7 +66,7 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
               src={iconDownArrow}
               alt="Arrow Down Icon"
               onClick={onOpenProject}
-              className={`transition-transform duration-500 p-2 lg:hidden ${openProject ? 'rotate-180' : 'rotate-0'}`}
+              className={`transition-transform duration-500 p-2 lg:hidden  ${openProject ? 'rotate-180' : 'rotate-0'}`}
             />
           </div>
         </div>

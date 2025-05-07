@@ -11,7 +11,7 @@ import Project from "./Project";
 
 function ProjectSection() {
   return (
-    <section className="m-6 md:m-12">
+    <section className="m-6 md:m-12 lg:mx-32 lg:mb-4 2xl:mx-60 2xl:mb-16">
 
       <h2 className='text-2xl font-semibold text-gradient-primary mb-4 md:text-4xl md:mb-8'>Projets</h2>
 
@@ -19,13 +19,13 @@ function ProjectSection() {
 
         <Project
           title="Minutos Telecom"
-          subtitle="Site institutionnel responsive et optimisé."
+          subtitle="Site institutionnel responsive, optimisé pour l'expérience utilisateur."
           description="Développement front-end responsive avec CSS modulaire, intégration d'APIs, validation de formulaires et optimisation SEO, en privilégiant l’accessibilité et la maintenance."
           img="/img/print-minutos.jpg"
           technologies={[html, css, js]} />
 
         <Project
-          title="Portfolio professionnel"
+          title="Portfolio Professionnel"
           subtitle="Premier portfolio axé sur l'UX/UI et le développement front-end."
           description="Projet de portfolio développé dans un but d'apprentissage, combinant React et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
           img="/img/print-portfolio.jpg"
@@ -33,7 +33,7 @@ function ProjectSection() {
 
         <Project
           title="GryphIQ"
-          subtitle='Projeto completo para o estágio.'
+          subtitle="Projet couvrant la conception et le développement d'un site web."
           description="Développement d'un site avec gestion de connexion, création d'API, tableau filtrable, intégration Firebase et fonctionnalité de glisser-déposer. Projet ambitieux réalisé en un mois avec une approche agile."
           img="/img/print-gryphiq.jpg"
           technologies={[react, tailwind, firebase]} />
@@ -53,7 +53,7 @@ function ProjectSection() {
           technologies={[html, css, js]} />
 
         <Project
-          title="Mini-portfolio interactif"
+          title="Mini-Portfolio Interactif"
           subtitle='Premier portfolio interactif inspiré du concept LinkTree.'
           description="Développement d'une page responsive en HTML, CSS et JavaScript pur, utilisant des data attributes pour faciliter l'interaction dynamique. Optimisé pour mobile et desktop."
           img="/img/print-linktree.jpg"
