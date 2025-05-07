@@ -56,16 +56,16 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
               ))}
             </div>
           </div>
-          <div className='flex items-end justify-between gap-4 mt-2'>
+          <div className='flex items-end justify-between gap-4 mt-2 '>
             <p className="text-base px-2 pb-2">{subtitle}</p>
-            <img src={iconDownArrow} alt="Arrow Down Icon" onClick={onOpenProject} className={`transition-transform duration-500 p-2 ${openProject ? 'rotate-180' : 'rotate-0'}`}
+            <img src={iconDownArrow} alt="Arrow Down Icon" onClick={onOpenProject} className={`transition-transform duration-500 p-2  ${openProject ? 'rotate-180' : 'rotate-0'}`}
             />
           </div>
         </div>
         {/* HIDDEN DIV */}
         <div ref={projectRef} className={`absolute overflow-hidden transition-all duration-500 p-2 z-10 shadow-xl border-t-white bg-white ${openProject ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
           <p className='mb-2'>{description}</p>
-          <div className='flex gap-4 justify-end'>
+          <div className='flex gap-4 justify-end '>
             <Button variant="primary-sm">GitHub</Button>
             <Button variant='secondary-sm'>Site</Button>
           </div>
