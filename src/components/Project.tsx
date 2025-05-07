@@ -40,9 +40,13 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
     <div className="shadow-xl md:w-[45%] lg:duration-300 lg:w-1/4 lg:hover:scale-110" ref={projectRef}>
 
       {/* HOVER */}
-      <div className={`relative w-full h-40 group overflow-hidden box-border bg-cover`} style={{ backgroundImage: `url(${img})` }}>
-        <div className="absolute inset-0 bg-black bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity p-2 hidden lg:flex">
+      <div className={`relative w-full h-44 group overflow-hidden box-border  bg-cover bg-center`} style={{ backgroundImage: `url(${img})` }}>
+        <div className="absolute inset-0 bg-black bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity p-3 hidden lg:flex lg:flex-col justify-between">
           <p className='text-sm font-light'>{description}</p>
+          <div className="flex gap-4 justify-end">
+            <Button variant="primary-sm">GitHub</Button>
+            <Button variant="secondary-sm">Site</Button>
+          </div>
         </div>
       </div>
 

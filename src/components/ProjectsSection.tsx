@@ -41,14 +41,14 @@ function ProjectSection() {
         <Project
           title="Minutos - Backend"
           subtitle='Portail sécurisé pour clients et administrateurs.'
-          description="Développement d'un espace client et d'un tableau de bord administrateur avec authentification sécurisée. Gestion complète des utilisateurs et des administrateurs via des opérations CRUD, conforme au modèle MVC orienté objet. Projet conçu pour garantir modularité, évolutivité et maintenabilité."
+          description="Développement d'un espace client et d'un tableau de bord admin avec authentification sécurisée et gestion CRUD selon le modèle MVC orienté objet, conçu pour être modulaire et évolutif."
           img="/img/print-minutos-back.jpg"
           technologies={[php, sql, js]} />
 
         <Project
           title="Focus Tomato"
           subtitle='App de gestion du temps basée sur la méthode Pomodoro.'
-          description="Application front-end réactive pour gérer un minuteur Pomodoro avec démarrage, pause et réinitialisation. Fonctionnalités CRUD pour les tâches, persistance avec localStorage, utilisation des data attributes et support du glisser-déposer pour une meilleure expérience utilisateur."
+          description="Application front-end pour gérer un minuteur Pomodoro avec CRUD de tâches, persistance via localStorage et glisser-déposer pour une meilleure expérience utilisateur."
           img="/img/print-focus-tomato.jpg"
           technologies={[html, css, js]} />
 
