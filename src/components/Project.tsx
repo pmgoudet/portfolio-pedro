@@ -41,7 +41,7 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
 
       {/* HOVER */}
       <div className={`relative w-full h-48 group overflow-hidden box-border  bg-cover bg-center`} style={{ backgroundImage: `url(${img})` }}>
-        <div className="absolute inset-0 bg-black bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity p-3 hidden lg:flex lg:flex-col justify-between">
+        <div className="absolute inset-0 bg-black bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity p-3 hidden lg:flex lg:flex-col justify-between ">
           <p className='text-sm font-light'>{description}</p>
           <div className="flex gap-4 justify-end">
             <Button variant="primary-sm">GitHub</Button>
@@ -53,15 +53,15 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
       <div className="bg-white relative">
         <div className='md:min-h-32'>
           <div className="flex justify-between items-center">
-            <h3 className="p-2 text-lg font-semibold">{title}</h3>
-            <div className="p-2 flex gap-2 justify-end items-end ">
+            <h3 className="p-2 text-lg font-semibold lg:px-4">{title}</h3>
+            <div className="p-2 flex gap-2 justify-end items-end lg:px-4">
               {icons.map((icon, index) => (
                 <img key={index} src={icon} alt={`Logo ${icon}`} className="w-4" />
               ))}
             </div>
           </div>
-          <div className="flex items-end justify-between gap-4 mt-2">
-            <p className="text-base px-2 pb-2">{subtitle}</p>
+          <div className="flex items-end justify-between gap-4 mt-2 ">
+            <p className="text-base px-2 pb-2 lg:px-4">{subtitle}</p>
             <img
               src={iconDownArrow}
               alt="Arrow Down Icon"

@@ -7,7 +7,7 @@ interface NavBarProps {
 
 function NavBar(props: NavBarProps) {
 
-  const menuNavBar: string[] = ["Moi", "Projets", "Skills", "Graphisme", "Contact"];
+  const menuNavBar: string[] = ["À propos", "Projets", "Skills", "Graphisme", "Contact"];
 
   return (
     <div className={`h-screen bg-white dark:bg-dark-color ${props.width} absolute right-0 top-0 z-0 shadow-2xl md:shadow-none duration-300 overflow-x-hidden md:duration-0 md:w-full md:h-auto md:relative`}>

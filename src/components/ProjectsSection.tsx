@@ -6,6 +6,7 @@ import sql from '../assets/icon/mysql-icon-hover.svg'
 import react from '../assets/icon/react-icon-hover.svg'
 import tailwind from '../assets/icon/tailwind-icon-hover.svg'
 import firebase from '../assets/icon/firebase.svg'
+import typescript from '../assets/icon/typescript-icon-hover.svg'
 
 import Project from "./Project";
 
@@ -29,14 +30,14 @@ function ProjectSection() {
           subtitle="Premier portfolio axé sur l'UX/UI et le développement front-end."
           description="Projet de portfolio développé dans un but d'apprentissage, combinant React et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
           img="/img/print-portfolio.jpg"
-          technologies={[react, tailwind]} />
+          technologies={[react, tailwind, typescript]} />
 
         <Project
           title="GryphIQ"
           subtitle="Projet couvrant la conception et le développement d'un site web."
           description="Développement d'un site avec gestion de connexion, création d'API, tableau filtrable, intégration Firebase et fonctionnalité de glisser-déposer. Projet ambitieux réalisé en un mois avec une approche agile."
           img="/img/print-gryphiq.jpg"
-          technologies={[react, tailwind, firebase]} />
+          technologies={[react, tailwind, typescript, firebase]} />
 
         <Project
           title="Minutos - Backend"
@@ -47,7 +48,7 @@ function ProjectSection() {
 
         <Project
           title="Focus Tomato"
-          subtitle='App de gestion du temps basée sur la méthode Pomodoro.'
+          subtitle='Application de gestion du temps basée sur la méthode Pomodoro.'
           description="Application front-end pour gérer un minuteur Pomodoro avec CRUD de tâches, persistance via localStorage et glisser-déposer pour une meilleure expérience utilisateur."
           img="/img/print-focus-tomato.jpg"
           technologies={[html, css, js]} />
