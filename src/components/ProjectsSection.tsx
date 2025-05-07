@@ -3,6 +3,8 @@ import css from '../assets/icon/css-icon-hover.svg'
 import js from '../assets/icon/javascript-icon-hover.svg'
 import php from '../assets/icon/php-icon-hover.svg'
 import sql from '../assets/icon/mysql-icon-hover.svg'
+import react from '../assets/icon/react-icon-hover.svg'
+import tailwind from '../assets/icon/tailwind-icon-hover.svg'
 
 import Project from "./Project";
 
@@ -22,25 +24,32 @@ function ProjectSection() {
           technologies={[html, css, js]} />
 
         <Project
-          title="Focus Tomato"
-          subtitle='Gestion du temps avec la méthode Pomodoro.'
-          description='Site web front-end avec des fonctionnalités telles que démarrage e pause du minuteur, gestion des tâches (CRUD), sauvegarde dans le localStorage, utilisation de data attributes et drag-and-drop.'
-          img="/img/print-focus-tomato.jpg"
-          technologies={[html, css, js]} />
-
-        <Project
           title="Minutos Telecom - Backend"
-          subtitle='Espace client et espace administrateur du site.'
-          description="Projet en cours de développement. Connexion et modification des données personnelles par les clients, accès administrateur aux utilisateurs et à d'autres administrateurs, avec gestion complète via la méthode CRUD. Construit en architecture MVC orientée objet."
+          subtitle='Portail sécurisé pour clients et administrateurs.'
+          description="Développement d'un espace client et d'un tableau de bord administrateur avec authentification sécurisée. Gestion complète des utilisateurs et des administrateurs via des opérations CRUD, conforme au modèle MVC orienté objet. Projet conçu pour garantir modularité, évolutivité et maintenabilité."
           img="/img/print-minutos-back.jpg"
           technologies={[php, sql, js]} />
 
         <Project
           title="Focus Tomato"
-          subtitle='Gestion du temps avec la méthode Pomodoro.'
-          description='Site web front-end avec des fonctionnalités telles que démarrage e pause du minuteur, gestion des tâches (CRUD), sauvegarde dans le localStorage, utilisation de data attributes et drag-and-drop.'
+          subtitle='Application de gestion du temps basée sur la méthode Pomodoro.'
+          description="Création d'une application front-end réactive permettant de démarrer, mettre en pause et réinitialiser un minuteur Pomodoro. Gestion complète des tâches (CRUD), persistance des données avec localStorage, utilisation de data attributes, et fonctionnalités de glisser-déposer pour une meilleure expérience utilisateur."
           img="/img/print-focus-tomato.jpg"
           technologies={[html, css, js]} />
+
+        <Project
+          title="Mini-portfolio interactif"
+          subtitle='Premier portfolio interactif inspiré du concept LinkTree.'
+          description="Développement d'une page responsive en HTML, CSS et JavaScript pur, utilisant des data attributes pour faciliter l'interaction dynamique. Optimisé pour mobile et desktop."
+          img="/img/print-linktree.jpg"
+          technologies={[html, css, js]} />
+
+        <Project
+          title="Portfolio professionnel"
+          subtitle="Premier portfolio axé sur l'UX/UI et le développement front-end."
+          description="Projet de portfolio développé dans un but d'apprentissage, combinant React et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
+          img="/img/print-portfolio.jpg"
+          technologies={[react, tailwind]} />
 
       </div>
 
