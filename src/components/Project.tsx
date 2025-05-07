@@ -21,43 +21,39 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
     setOpenProject(!openProject)
   }
 
+
   return (
     <div className="shadow-xl md:w-[45%] lg:w-1/4">
-
       {/* HOVER */}
       <div className={`relative w-full h-40 group overflow-hidden box-border bg-cover`} style={{ backgroundImage: `url(${img})` }}>
         <div className="absolute inset-0 bg-black bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity p-2 hidden lg:flex">
           <p>{description}</p>
         </div>
       </div>
-
-      <div className="p-2 bg-white">
+      <div className=" bg-white relative">
         <div className=''>
           <div className='flex justify-between items-center'>
-            <h3 className="text-lg font-semibold">{title}</h3>
-            <div className='flex gap-2 pr-2 justify-end items-end '>
+            <h3 className="p-2 text-lg font-semibold">{title}</h3>
+            <div className='p-2 flex gap-2 justify-end items-end '>
               {icons.map((icon, index) => (
                 <img key={index} src={icon} alt={`Logo ${icon}`} className='w-4' />
               ))}
             </div>
           </div>
-
           <div className='flex items-end justify-between gap-4 mt-2'>
-            <p className="text-base">{subtitle}</p>
-            <img src={iconDownArrow} alt="Arrow Down Icon" onClick={onOpenProject} className={`transition-transform duration-500 ${openProject ? 'rotate-180' : 'rotate-0'}`}
+            <p className="text-base px-2 pb-2">{subtitle}</p>
+            <img src={iconDownArrow} alt="Arrow Down Icon" onClick={onOpenProject} className={`transition-transform duration-500 p-2 ${openProject ? 'rotate-180' : 'rotate-0'}`}
             />
           </div>
         </div>
-
         {/* HIDDEN DIV */}
-        <div className={`w-full mt-4 overflow-hidden transition-all duration-500 ${openProject ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div className={`absolute overflow-hidden transition-all duration-500 p-2 z-10 shadow-xl border-t-white bg-white ${openProject ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
           <p className='mb-2'>{description}</p>
           <div className='flex gap-4 justify-end'>
             <Button variant="primary-sm">GitHub</Button>
             <Button variant='secondary-sm'>Site</Button>
           </div>
         </div>
-
       </div>
     </div>
   );

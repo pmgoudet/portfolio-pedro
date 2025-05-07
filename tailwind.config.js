@@ -9,6 +9,9 @@ module.exports = {
     extend: {
       colors: {
         'dark-color': 'var(--bg-dark-color)',
+        primary: 'var(--primary-color)',
+        secondary: 'var(--secondary-color)',
+        'bg-dark': 'var(--bg-dark-color)',
       }
     },
     screens: {
