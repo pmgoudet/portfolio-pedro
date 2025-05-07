@@ -1,7 +1,7 @@
 // import React from 'react';
 import iconDownArrow from '../assets/icon/arrow-down.svg'
 import Button from './Button'
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react';
 
 type ProjectProps = {
   title: string;
@@ -20,6 +20,22 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
   const onOpenProject = () => {
     setOpenProject(!openProject)
   }
+
+  const projectRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (projectRef.current && !projectRef.current.contains(event.target as Node)) {
+        setOpenProject(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
 
   return (
@@ -47,7 +63,7 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
           </div>
         </div>
         {/* HIDDEN DIV */}
-        <div className={`absolute overflow-hidden transition-all duration-500 p-2 z-10 shadow-xl border-t-white bg-white ${openProject ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
+        <div ref={projectRef} className={`absolute overflow-hidden transition-all duration-500 p-2 z-10 shadow-xl border-t-white bg-white ${openProject ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
           <p className='mb-2'>{description}</p>
           <div className='flex gap-4 justify-end'>
             <Button variant="primary-sm">GitHub</Button>
