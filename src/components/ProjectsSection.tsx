@@ -5,6 +5,7 @@ import php from '../assets/icon/php-icon-hover.svg'
 import sql from '../assets/icon/mysql-icon-hover.svg'
 import react from '../assets/icon/react-icon-hover.svg'
 import tailwind from '../assets/icon/tailwind-icon-hover.svg'
+import firebase from '../assets/icon/firebase.svg'
 
 import Project from "./Project";
 
@@ -24,7 +25,21 @@ function ProjectSection() {
           technologies={[html, css, js]} />
 
         <Project
-          title="Minutos Telecom - Backend"
+          title="Portfolio professionnel"
+          subtitle="Premier portfolio axé sur l'UX/UI et le développement front-end."
+          description="Projet de portfolio développé dans un but d'apprentissage, combinant React et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
+          img="/img/print-portfolio.jpg"
+          technologies={[react, tailwind]} />
+
+        <Project
+          title="GryphIQ"
+          subtitle='Projeto completo para o estágio.'
+          description="Développement d'un site avec gestion de connexion, création d'API, tableau filtrable, intégration Firebase et fonctionnalité de glisser-déposer. Projet ambitieux réalisé en un mois avec une approche agile."
+          img="/img/print-gryphiq.jpg"
+          technologies={[react, tailwind, firebase]} />
+
+        <Project
+          title="Minutos - Backend"
           subtitle='Portail sécurisé pour clients et administrateurs.'
           description="Développement d'un espace client et d'un tableau de bord administrateur avec authentification sécurisée. Gestion complète des utilisateurs et des administrateurs via des opérations CRUD, conforme au modèle MVC orienté objet. Projet conçu pour garantir modularité, évolutivité et maintenabilité."
           img="/img/print-minutos-back.jpg"
@@ -32,8 +47,8 @@ function ProjectSection() {
 
         <Project
           title="Focus Tomato"
-          subtitle='Application de gestion du temps basée sur la méthode Pomodoro.'
-          description="Création d'une application front-end réactive permettant de démarrer, mettre en pause et réinitialiser un minuteur Pomodoro. Gestion complète des tâches (CRUD), persistance des données avec localStorage, utilisation de data attributes, et fonctionnalités de glisser-déposer pour une meilleure expérience utilisateur."
+          subtitle='App de gestion du temps basée sur la méthode Pomodoro.'
+          description="Application front-end réactive pour gérer un minuteur Pomodoro avec démarrage, pause et réinitialisation. Fonctionnalités CRUD pour les tâches, persistance avec localStorage, utilisation des data attributes et support du glisser-déposer pour une meilleure expérience utilisateur."
           img="/img/print-focus-tomato.jpg"
           technologies={[html, css, js]} />
 
@@ -44,12 +59,6 @@ function ProjectSection() {
           img="/img/print-linktree.jpg"
           technologies={[html, css, js]} />
 
-        <Project
-          title="Portfolio professionnel"
-          subtitle="Premier portfolio axé sur l'UX/UI et le développement front-end."
-          description="Projet de portfolio développé dans un but d'apprentissage, combinant React et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
-          img="/img/print-portfolio.jpg"
-          technologies={[react, tailwind]} />
 
       </div>
 
