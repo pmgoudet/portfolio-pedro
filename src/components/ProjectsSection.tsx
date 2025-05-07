@@ -11,7 +11,7 @@ import Project from "./Project";
 
 function ProjectSection() {
   return (
-    <section className="m-6 md:m-12 lg:mx-32 lg:mb-4 2xl:mx-60 2xl:mb-16">
+    <section className="m-6 mb-12 md:m-12 md:mb-16 lg:mx-32 lg:mb-20 2xl:mx-60 2xl:mb-16">
 
       <h2 className='text-2xl font-semibold text-gradient-primary mb-4 md:text-4xl md:mb-8'>Projets</h2>
 

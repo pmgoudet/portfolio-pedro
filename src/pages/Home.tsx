@@ -9,6 +9,7 @@ const App = () => {
       <Hero />
       <SeparatorLine />
       <ProjectsSection />
+      <SeparatorLine />
     </Layout>
   );
 };
