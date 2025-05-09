@@ -50,10 +50,10 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
         </div>
       </div>
 
-      <div className="bg-white relative">
+      <div className="bg-white relative dark:bg-secondary">
         <div className='md:min-h-32'>
           <div className="flex justify-between items-center">
-            <h3 className="p-2 text-lg font-semibold lg:px-4">{title}</h3>
+            <h3 className="p-2 text-lg font-semibold lg:px-4 dark:text-white ">{title}</h3>
             <div className="p-2 flex gap-2 justify-end items-end lg:px-4">
               {icons.map((icon, index) => (
                 <img key={index} src={icon} alt={`Logo ${icon}`} className="w-4" />
@@ -61,7 +61,7 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
             </div>
           </div>
           <div className="flex items-end justify-between gap-4 mt-2 ">
-            <p className="text-base px-2 pb-2 lg:px-4">{subtitle}</p>
+            <p className="text-base px-2 pb-2 lg:px-4 dark:text-white dark:font-light">{subtitle}</p>
             <img
               src={iconDownArrow}
               alt="Arrow Down Icon"

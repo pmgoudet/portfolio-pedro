@@ -11,8 +11,13 @@ module.exports = {
         'dark-color': 'var(--bg-dark-color)',
         primary: 'var(--primary-color)',
         secondary: 'var(--secondary-color)',
-        'bg-dark': 'var(--bg-dark-color)',
-      }
+        'darker-color': 'var(--bg-darker-color)',
+      },
+      boxShadow: {
+        'white-md': '0 4px 6px rgba(255, 255, 255, 0.1)',
+        'white-lg': '0 10px 15px rgba(255, 255, 255, 0.15)',
+        'white-xl': '0 20px 25px rgba(255, 255, 255, 0.2)',
+      },
     },
     screens: {
       sm: '640px',// celulares

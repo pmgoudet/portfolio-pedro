@@ -15,6 +15,7 @@ const App = () => {
       <AProposSection />
       <SeparatorLine />
       <SkillsSection />
+      <SeparatorLine />
 
     </Layout>
   );
