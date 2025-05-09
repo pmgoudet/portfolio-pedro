@@ -60,10 +60,7 @@ function ProjectSection() {
           img="/img/print-linktree.jpg"
           technologies={[html, css, js]} />
 
-
       </div>
-
-
     </section>
   )
 }
