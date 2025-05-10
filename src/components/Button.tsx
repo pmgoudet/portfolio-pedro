@@ -5,13 +5,15 @@ interface ButtonProps {
   onClick?: () => void;
   variant?: 'primary' | 'secondary' | 'primary-sm' | 'secondary-sm';
   disabled?: boolean;
+  type?: 'submit' | 'reset' | 'button';
 }
 
 const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
   variant = 'primary',
-  disabled = false
+  disabled = false,
+  type = 'button',
 }) => {
 
   const baseClasses =
@@ -25,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
       <div className="inline-block p-[2px] rounded-md bg-gradient-primary ">
         <div className="bg-white dark:bg-dark-color rounded-md px-6 py-3  lg:over:opacity-90">
           <button
-            className={`w-full h-full bg-white rounded-md text-gradient-primary ${baseClasses} ${disabledClasses}`}
+            className={`w-full h-full bg-white rounded-md text-gradient-primary  ${baseClasses} ${disabledClasses}`}
             onClick={onClick}
             disabled={disabled}
           >
@@ -66,7 +68,8 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`bg-gradient-primary text-white duration-300 px-6 py-3  hover:opacity-90 ${baseClasses} ${disabledClasses}`}
+      type={type}
+      className={`bg-gradient-primary text-white duration-300 px-6 py-3 hover:opacity-90 flex items-center gap-2 ${baseClasses} ${disabledClasses}`}
       onClick={onClick}
       disabled={disabled}
     >

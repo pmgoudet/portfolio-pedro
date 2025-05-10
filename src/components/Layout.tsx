@@ -1,5 +1,6 @@
 import { ReactNode } from "react";
 import Header from "./Header";
+import Footer from "./Footer";
 
 
 type LayoutProps = {
@@ -11,6 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
     <div className="dark:bg-dark-color">
       <Header />
       <main className="flex-1">{children}</main>
+      <Footer />
     </div>
   );
 };

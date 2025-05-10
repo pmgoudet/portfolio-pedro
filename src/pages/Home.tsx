@@ -4,6 +4,7 @@ import SeparatorLine from "../components/SeparatorLine";
 import ProjectsSection from "../components/ProjectsSection";
 import AProposSection from "../components/AProposSection";
 import SkillsSection from "../components/SkillsSection";
+import ContactSection from "../components/ContactSection";
 
 const App = () => {
   return (
@@ -16,7 +17,7 @@ const App = () => {
       <SeparatorLine />
       <SkillsSection />
       <SeparatorLine />
-
+      <ContactSection />
     </Layout>
   );
 };
