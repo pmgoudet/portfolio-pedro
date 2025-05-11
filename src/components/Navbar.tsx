@@ -1,6 +1,5 @@
 import SocialIcons from './SocialIcons';
 import Darkmode from './Darkmode';
-import a from '../pages/Graphisme';
 
 type NavBar = {
   name: string,
@@ -28,7 +27,7 @@ function NavBar(props: NavBarProps) {
     },
     {
       name: "Graphisme",
-      href: ""
+      href: "#"
     },
     {
       name: "Contact",
