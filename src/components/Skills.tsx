@@ -1,4 +1,3 @@
-//! nao esquece de por no readme o npm i hamburguer machin la
 import htmlIcon from '../assets/icon/html-icon.svg';
 import htmlIconHover from '../assets/icon/html-icon-hover.svg';
 import cssIcon from '../assets/icon/css-icon.svg';
