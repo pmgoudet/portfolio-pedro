@@ -87,9 +87,15 @@ const Project = ({ title, subtitle, description, img, technologies, github, site
             <a href={github} target='_blank' className='border-2 border-primary text-sm font-light px-2 py-1 rounded-md'>
               Github
             </a>
-            <a href={site} target='_blank' className='text-sm font-light px-3 py-1 rounded-md bg-gradient-primary text-white'>
-              Site
-            </a>
+            {site && (
+              <a
+                href={site}
+                target="_blank"
+                className="text-sm font-light px-3 py-1 rounded-md bg-gradient-primary text-white"
+              >
+                Site
+              </a>
+            )}
           </div>
         </div>
 

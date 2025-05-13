@@ -6,7 +6,7 @@ import AProposSection from "../components/AProposSection";
 import SkillsSection from "../components/SkillsSection";
 import ContactSection from "../components/ContactSection";
 
-const App = () => {
+const Home = () => {
   return (
     <Layout>
       <Hero />
@@ -22,4 +22,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;

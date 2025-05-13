@@ -1,5 +1,6 @@
 import githubIcon from '../assets/icon/github-degrade.svg';
 import linkedinIcon from '../assets/icon/linkedin-degrade.svg';
+import flickrIcon from '../assets/icon/flickr-icon.svg';
 
 const SocialIcons = ({ showOnMobile = true }) => {
   const containerClasses = showOnMobile
@@ -8,8 +9,9 @@ const SocialIcons = ({ showOnMobile = true }) => {
 
   return (
     <div className={containerClasses}>
-      <a href="https://github.com/pmgoudet" target='_blank'><img src={githubIcon} alt="GitHub Icon" className='h-10 lg:h-6 duration-500 lg:hover:scale-110' /></a>
-      <a href="https://www.linkedin.com/in/pmgoudet" target='_blank'><img src={linkedinIcon} alt="LinkedIn Icon" className='h-10 lg:h-6 duration-500 lg:hover:scale-110' /></a>
+      <a href="https://www.flickr.com/photos/pmgoudet/" target='_blank'><img src={flickrIcon} alt="Flickr Icon" className='h-10 lg:h-6 duration-500 lg:hover:scale-110' title="Mon Flickr (Graphisme)" /></a>
+      <a href="https://github.com/pmgoudet" target='_blank'><img src={githubIcon} alt="GitHub Icon" className='h-10 lg:h-6 duration-500 lg:hover:scale-110' title="Mon Github" /></a>
+      <a href="https://www.linkedin.com/in/pmgoudet" target='_blank'><img src={linkedinIcon} alt="LinkedIn Icon" className='h-10 lg:h-6 duration-500 lg:hover:scale-110' title="Mon LinkedIn" /></a>
     </div>
   );
 };

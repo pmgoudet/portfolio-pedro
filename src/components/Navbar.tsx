@@ -26,10 +26,6 @@ function NavBar(props: NavBarProps) {
       href: 'skills'
     },
     {
-      name: "Graphisme",
-      href: "#"
-    },
-    {
       name: "Contact",
       href: 'contact'
     }
