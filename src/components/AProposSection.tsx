@@ -1,11 +1,11 @@
-import photo from '../assets/img/foto-apropos.jpg'
+import photo from '../assets/img/eu.png'
 
 function AProposSection() {
   return (
     <section className="m-6 mb-12 md:m-12 md:mb-16 lg:mx-32 lg:mb-20 2xl:mx-60 2xl:mb-16 scroll-mt-[140px]" id='a-propos'>
       <h2 className='text-2xl font-semibold text-gradient-primary mb-4 pt-4 md:text-4xl md:mb-8'>À Propos de Moi</h2>
 
-      <div className='md:flex md:gap-4 dark:text-white dark:font-light'>
+      <div className='md:flex md:gap-4 md:items-start lg:gap-16 2xl:w-3/4 lg:m-auto lg:p-8 dark:text-white dark:font-light'>
         <div className='pb-4 md:p-0'>
           <p className="pb-2">Franco-brésilien et installé en France, je me lance dans le développement web après quelques années dans le marketing et la relation client. Passionné par la technologie, j'adore l'idée de créer des solutions pratiques et utiles pour le quotidien.
           </p>
@@ -17,7 +17,7 @@ function AProposSection() {
           </p>
         </div>
 
-        <img src={photo} alt="Ma Photo" className='w-64' />
+        <img src={photo} alt="Ma Photo" className='w-72 m-auto' />
       </div>
     </section>
   )
