@@ -21,7 +21,7 @@ function ProjectSection() {
         <Project
           title="Minutos Telecom"
           subtitle="Site institutionnel responsive, optimisé pour l'expérience utilisateur."
-          description="Développement front-end responsive avec CSS modulaire, intégration d'APIs, validation de formulaires et optimisation SEO, en privilégiant l’accessibilité et la maintenance."
+          description="Mon premier site web réalisé en HTML, CSS et JavaScript. Conçu de A à Z, de la maquette Figma à l’intégration finale, validée et mise en ligne par le client. Site responsive suivant les bonnes pratiques d’accessibilité, de performance et de maintenabilité. Plus d’infos sur GitHub."
           img="/img/print-minutos.jpg"
           technologies={[html, css, js]}
           github='https://github.com/pmgoudet/minutos-telecom'
@@ -40,10 +40,12 @@ function ProjectSection() {
         <Project
           title="GryphIQ"
           subtitle="Projet couvrant la conception et le développement d'un site web."
-          description="Développement d'un site avec gestion de connexion, création d'API, tableau filtrable, intégration Firebase et fonctionnalité de glisser-déposer. Projet ambitieux réalisé en un mois avec une approche agile."
+          description='Développement d’un site avec gestion de connexion, création d’API, tableau filtrable, intégration Firebase et fonctionnalité de glisser-déposer. Projet ambitieux réalisé à deux, en collaboration avec Anaïs Diez (github.com/Anais-DZ), dans le cadre de mon stage d’un mois et demi.'
           img="/img/print-gryphiq.jpg"
           technologies={[react, tailwind, typescript, firebase]}
-          github='https://github.com/Anais-DZ/GryphIQ' />
+          github='https://github.com/Anais-DZ/GryphIQ'
+        />
+
 
         <Project
           title="Minutos - Backend"

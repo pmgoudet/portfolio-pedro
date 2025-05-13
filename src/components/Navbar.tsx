@@ -13,8 +13,8 @@ interface NavBarProps {
 
 function NavBar(props: NavBarProps) {
   const menuNavBar: NavBar[] = [
-    { name: 'À propos', href: 'a-propos' },
     { name: 'Projets', href: 'projets' },
+    { name: 'À propos', href: 'a-propos' },
     { name: 'Compétences', href: 'skills' },
     { name: 'Contact', href: 'contact' },
   ];
