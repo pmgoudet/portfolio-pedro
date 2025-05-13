@@ -27,7 +27,7 @@ function NavBar(props: NavBarProps) {
         <ul className="md:flex gap-6 lg:gap-8">
           {menuNavBar.map((item) => (
             <li
-              className="mb-6 md:mb-0 text-xl md:text-base dark:text-white relative group"
+              className="mb-6 md:mb-0 text-xl md:text-base dark:text-white relative group cursor-pointer"
               key={item.href}
             >
               <Link
