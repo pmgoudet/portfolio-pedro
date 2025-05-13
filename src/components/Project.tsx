@@ -1,5 +1,4 @@
 import iconDownArrow from '../assets/icon/arrow-down.svg'
-import Button from './Button'
 import { useState, useRef, useEffect } from 'react'
 
 type ProjectProps = {
@@ -8,13 +7,14 @@ type ProjectProps = {
   description: string;
   img: string;
   technologies: Array<string>;
+  github: string;
+  site?: string;
 }
 
-const Project = ({ title, subtitle, description, img, technologies }: ProjectProps) => {
+const Project = ({ title, subtitle, description, img, technologies, github, site }: ProjectProps) => {
 
   const icons: string[] = technologies;
   const [openProject, setOpenProject] = useState<boolean>(false);
-
   const projectRef = useRef<HTMLDivElement>(null);
 
   const onOpenProject = () => {
@@ -28,13 +28,12 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
         setOpenProject(false);
       }
     }
-
     document.addEventListener("click", handleClickOutside);
-
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+
 
   return (
     <div className="shadow-xl md:w-[45%] lg:duration-300 xl:w-[30%] lg:hover:scale-110" ref={projectRef}>
@@ -44,8 +43,18 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
         <div className="absolute inset-0 bg-black bg-opacity-90 text-white opacity-0 group-hover:opacity-100 transition-opacity p-3 hidden lg:flex lg:flex-col justify-between ">
           <p className='text-sm font-light'>{description}</p>
           <div className="flex gap-4 justify-end">
-            <Button variant="primary-sm">GitHub</Button>
-            <Button variant="secondary-sm">Site</Button>
+            <a href={github} target='_blank' className='border-2 border-primary text-sm font-light px-2 py-1 rounded-md'>
+              Github
+            </a>
+            {site && (
+              <a
+                href={site}
+                target="_blank"
+                className="text-sm font-light px-3 py-1 rounded-md bg-gradient-primary text-white"
+              >
+                Site
+              </a>
+            )}
           </div>
         </div>
       </div>
@@ -75,8 +84,12 @@ const Project = ({ title, subtitle, description, img, technologies }: ProjectPro
         <div className={`absolute overflow-hidden transition-all duration-500 p-2 z-10 shadow-xl border-t-white bg-white ${openProject ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'}`}>
           <p className="mb-2">{description}</p>
           <div className="flex gap-4 justify-end">
-            <Button variant="primary-sm">GitHub</Button>
-            <Button variant="secondary-sm">Site</Button>
+            <a href={github} target='_blank' className='border-2 border-primary text-sm font-light px-2 py-1 rounded-md'>
+              Github
+            </a>
+            <a href={site} target='_blank' className='text-sm font-light px-3 py-1 rounded-md bg-gradient-primary text-white'>
+              Site
+            </a>
           </div>
         </div>
 

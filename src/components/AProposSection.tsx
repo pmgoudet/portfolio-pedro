@@ -2,7 +2,7 @@ import photo from '../assets/img/foto-apropos.jpg'
 
 function AProposSection() {
   return (
-    <section className="m-6 mb-12 md:m-12 md:mb-16 lg:mx-32 lg:mb-20 2xl:mx-60 2xl:mb-16" id='a-propos'>
+    <section className="m-6 mb-12 md:m-12 md:mb-16 lg:mx-32 lg:mb-20 2xl:mx-60 2xl:mb-16 scroll-mt-[140px]" id='a-propos'>
       <h2 className='text-2xl font-semibold text-gradient-primary mb-4 pt-4 md:text-4xl md:mb-8'>À Propos de Moi</h2>
 
       <div className='md:flex md:gap-4 dark:text-white dark:font-light'>

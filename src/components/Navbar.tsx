@@ -22,7 +22,7 @@ function NavBar(props: NavBarProps) {
       href: 'projets'
     },
     {
-      name: "Skills",
+      name: "Compétences",
       href: 'skills'
     },
     {

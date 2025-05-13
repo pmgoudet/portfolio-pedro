@@ -1,11 +1,20 @@
 import logoWhite from '../assets/img/logo-branco.svg'
 
 function Footer() {
+
+  const downloadCV = () => {
+    const link = document.createElement('a');
+    link.href = '/docs/CV-PedroGoudet.pdf';
+    link.download = 'CV-PedroGoudet.pdf';
+    link.click();
+  }
+
+
   return (
     <footer className='bg-gradient-primary pt-8 pb-4 md:p-12 md:pb-4 lg:px-32 2xl:px-60'>
       <div className='flex flex-col text-white gap-4 md:flex-row items-center justify-between'>
         <div>
-          <button className='flex items-center gap-2 border-2 border-white m-auto p-3 px-8 rounded-md mb-4 md:mb-0'>
+          <button className='flex items-center gap-2 border-2 border-white m-auto p-3 px-8 rounded-md mb-4 md:mb-0' onClick={downloadCV}>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
             </svg>

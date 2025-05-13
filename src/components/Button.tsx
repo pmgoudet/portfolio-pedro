@@ -27,6 +27,7 @@ const Button: React.FC<ButtonProps> = ({
       <div className="inline-block p-[2px] rounded-md bg-gradient-primary ">
         <div className="bg-white dark:bg-dark-color rounded-md px-6 py-3  lg:over:opacity-90">
           <button
+            type={type}
             className={`w-full h-full bg-white rounded-md text-gradient-primary  ${baseClasses} ${disabledClasses}`}
             onClick={onClick}
             disabled={disabled}
@@ -43,6 +44,7 @@ const Button: React.FC<ButtonProps> = ({
       <div className="inline-block p-[2px] rounded-md bg-gradient-primary shadow-md">
         <div className="bg-white rounded-md lg:over:opacity-90 py-0">
           <button
+            type={type}
             className={`w-full h-full bg-white text-sm rounded-md text-gradient-primary px-2  ${baseClasses} ${disabledClasses}`}
             onClick={onClick}
             disabled={disabled}
@@ -57,6 +59,7 @@ const Button: React.FC<ButtonProps> = ({
   if (variant === 'secondary-sm') {
     return (
       <button
+        type={type}
         className={`bg-gradient-primary text-white duration-300 px-4 py-1  hover:opacity-90 shadow-md text-sm ${baseClasses} ${disabledClasses}`}
         onClick={onClick}
         disabled={disabled}
