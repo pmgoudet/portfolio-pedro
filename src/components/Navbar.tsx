@@ -9,6 +9,7 @@ type NavBar = {
 
 interface NavBarProps {
   width: string;
+  onLinkClick: () => void;
 }
 
 function NavBar(props: NavBarProps) {
@@ -37,6 +38,7 @@ function NavBar(props: NavBarProps) {
                 duration={500} // Define a duração da rolagem
                 className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-100 group-hover:after:w-full"
                 href={`#${item.href}`} // <-- Adiciona href estático para SEO
+                onClick={props.onLinkClick} // <-- Para fechar a div ao clicar em algum menu
               >
                 {item.name}
               </Link>

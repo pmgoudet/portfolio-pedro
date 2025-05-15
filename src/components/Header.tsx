@@ -34,6 +34,7 @@ const Header = () => {
     };
   }, [activeBurger]);
 
+
   return (
     <header className='fixed top-0 left-0 w-full z-50 bg-white dark:bg-dark-color'>
       <div className=' md:relative md:w-auto md:flex md:items-center md:justify-between md:mx-12 md:mb-8 md:mt-0 md:pt-12 lg:mx-32 lg:pt-2 lg:my-6 2xl:mx-60'>
@@ -46,7 +47,7 @@ const Header = () => {
           </div >
         </div >
         <div ref={navRef}>
-          <NavBar width={activeBurger ? 'w-3/4' : 'w-0'} />
+          <NavBar width={activeBurger ? 'w-3/4' : 'w-0'} onLinkClick={() => setActiveBurger(false)} />
         </div>
       </div>
       <SeparatorLine width='w-full' />
