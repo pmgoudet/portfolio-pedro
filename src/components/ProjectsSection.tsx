@@ -22,7 +22,7 @@ function ProjectSection() {
           title="Minutos Telecom"
           subtitle="Site institutionnel responsive, optimisé pour l'expérience utilisateur."
           description="Mon premier site web réalisé en HTML, CSS et JavaScript. Conçu de A à Z, de la maquette Figma à l’intégration finale, validée et mise en ligne par le client. Site responsive suivant les bonnes pratiques d’accessibilité, de performance et de maintenabilité. Plus d’infos sur GitHub."
-          img="/img/print-minutos.jpg"
+          img="/img/print-minutos.webp"
           technologies={[html, css, js]}
           github='https://github.com/pmgoudet/minutos-telecom'
           site='https://minutos-telecom.vercel.app/'
@@ -32,7 +32,7 @@ function ProjectSection() {
           title="Portfolio Professionnel"
           subtitle="Premier portfolio axé sur l'UX/UI et le développement front-end."
           description="Projet de portfolio développé dans un but d'apprentissage, combinant React et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
-          img="/img/print-portfolio.jpg"
+          img="/img/print-portfolio.webp"
           technologies={[react, tailwind, typescript]}
           github='https://github.com/pmgoudet/portfolio-pedro'
         />
@@ -41,7 +41,7 @@ function ProjectSection() {
           title="GryphIQ"
           subtitle="Projet couvrant la conception et le développement d'un site web."
           description='Développement d’un site avec gestion de connexion, création d’API, tableau filtrable, intégration Firebase et fonctionnalité de glisser-déposer. Projet ambitieux réalisé à deux, en collaboration avec Anaïs Diez (github.com/Anais-DZ), dans le cadre de mon stage d’un mois et demi.'
-          img="/img/print-gryphiq.jpg"
+          img="/img/print-gryphiq.webp"
           technologies={[react, tailwind, typescript, firebase]}
           github='https://github.com/Anais-DZ/GryphIQ'
         />
@@ -51,7 +51,7 @@ function ProjectSection() {
           title="Minutos - Backend"
           subtitle='Portail sécurisé pour clients et administrateurs.'
           description="Développement d'un espace client et d'un tableau de bord admin avec authentification sécurisée et gestion CRUD selon le modèle MVC orienté objet, conçu pour être modulaire et évolutif."
-          img="/img/print-minutos-back.jpg"
+          img="/img/print-minutos-back.webp"
           technologies={[php, sql, js]}
           github='https://github.com/pmgoudet/minutos-telecom-_php' />
 
@@ -59,7 +59,7 @@ function ProjectSection() {
           title="Focus Tomato"
           subtitle='Application de gestion du temps basée sur la méthode Pomodoro.'
           description="Application front-end pour gérer un minuteur Pomodoro avec CRUD de tâches, persistance via localStorage et glisser-déposer pour une meilleure expérience utilisateur."
-          img="/img/print-focus-tomato.jpg"
+          img="/img/print-focus-tomato.webp"
           technologies={[html, css, js]}
           github='https://github.com/pmgoudet/focus-tomato'
           site='https://focus-tomato.vercel.app/' />
@@ -68,7 +68,7 @@ function ProjectSection() {
           title="Mini-Portfolio Interactif"
           subtitle='Premier portfolio interactif inspiré du concept LinkTree.'
           description="Développement d'une page responsive en HTML, CSS et JavaScript pur, utilisant des data attributes pour faciliter l'interaction dynamique. Optimisé pour mobile et desktop."
-          img="/img/print-linktree.jpg"
+          img="/img/print-linktree.webp"
           technologies={[html, css, js]}
           github='https://github.com/pmgoudet/LinkTree'
           site='https://pmgoudet.vercel.app/' />

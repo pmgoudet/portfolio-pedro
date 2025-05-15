@@ -1,4 +1,4 @@
-import photo from '../assets/img/eu.png'
+import photo from '../assets/img/eu.webp'
 
 function AProposSection() {
   return (
