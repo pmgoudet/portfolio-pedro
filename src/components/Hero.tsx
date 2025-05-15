@@ -1,7 +1,7 @@
-import HomeImg from "./HomeImg";
 import Button from "./Button";
 import SocialIcons from "./SocialIcons";
 import ArrowDown from "../components/ArrowDown";
+import imgHome from '../assets/img/img-home.webp';
 
 
 function Hero() {
@@ -40,7 +40,7 @@ function Hero() {
           <SocialIcons showOnMobile={false} />
         </div>
         <div className="p-4 mt-6 md:w-3/4 md:mt-10 ml-auto lg:w-1/2 lg:p-0 lg:m-0 xl:p-20 xl:pr-0">
-          <HomeImg />
+          <img src={imgHome} alt="Image Home" className='w-full' />
         </div>
       </div>
       <ArrowDown />
