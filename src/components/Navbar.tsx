@@ -36,6 +36,7 @@ function NavBar(props: NavBarProps) {
                 offset={-140} // Ajusta a rolagem para o header fixo (se necessário)
                 duration={500} // Define a duração da rolagem
                 className="relative after:content-[''] after:absolute after:left-0 after:bottom-[-4px] after:h-[1px] after:w-0 after:bg-current after:transition-all after:duration-100 group-hover:after:w-full"
+                href={`#${item.href}`} // <-- Adiciona href estático para SEO
               >
                 {item.name}
               </Link>
