@@ -53,7 +53,7 @@ function ProjectSection() {
           description="Développement d'un espace client et d'un tableau de bord admin avec authentification sécurisée et gestion CRUD selon le modèle MVC orienté objet, conçu pour être modulaire et évolutif."
           img="/img/print-minutos-back.webp"
           technologies={[php, sql, js]}
-          github='https://github.com/pmgoudet/minutos-telecom-_php' />
+          github='https://github.com/pmgoudet/minutos-telecom-backoffice' />
 
         <Project
           title="Focus Tomato"
