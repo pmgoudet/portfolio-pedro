@@ -117,19 +117,19 @@ function Skills() {
       {skills.map((skill, index) => (
         <div
           key={index}
-          className="group relative flex flex-col gap-2 w-[30%] md:max-w-28 items-center border-2 border-primary p-4 pb-2 rounded-md duration-300 lg:hover:scale-110 shadow-lg"
+          className="group relative flex flex-col gap-2 w-[30%] md:max-w-28 items-center border-2 border-primary p-4 pb-2 rounded-md duration-300 hover:scale-110 shadow-lg"
         >
           <img
             src={skill.icon}
             alt={`${skill.label} icon`}
-            className="w-10 absolute top-4 opacity-100 lg:group-hover:opacity-0 transition-opacity duration-500"
+            className="w-10 absolute top-4 opacity-100 group-hover:opacity-0 transition-opacity duration-500"
           />
           <img
             src={skill.hoverIcon}
             alt={`${skill.label} icon`}
-            className="w-10 absolute top-4 opacity-0 lg:group-hover:opacity-100 transition-opacity duration-500"
+            className="w-10 absolute top-4 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           />
-          <p className="text-primary lg:dark:group-hover:text-white lg:dark:group-hover:font-light transition-colors duration-500 font-semibold mt-12">{skill.label}</p>
+          <p className="text-primary dark:group-hover:text-white dark:group-hover:font-light transition-colors duration-500 font-semibold mt-12">{skill.label}</p>
         </div>
       ))}
     </div>
