@@ -28,7 +28,7 @@ function Hero() {
           <div>
             <p className="text-2xl font-semibold dark:text-white md:text-4xl lg:text-3xl">Bonjour, je suis</p>
             <h1 className="text-4xl font-bold text-gradient-primary mb-2 md:text-6xl lg:text-5xl">Pedro Goudet</h1>
-            <h2 className="text-lg mb-6 dark:text-white md:text-3xl md:mt-4 lg:text-2xl">Développeur Frontend</h2>
+            <h2 className="text-lg mb-6 dark:text-white md:text-3xl md:mt-4 lg:text-2xl">Développeur Web et Web Mobile</h2>
             <p className="dark:text-white leading-7 dark:font-light text-sm md:text-xl/8 lg:text-sm/7 2xl:text-base/7 lg:w-lg">Titulaire d’une Licence en publicité et marketing et actuellement en fin de formation en Développement Web et Web mobile (RNCP niv. 5), je prépare une formation de Concepteur Développeur d’Applications (Titre professionnel de niveau 6 – Bac+3/4) <strong>en alternance, à partir d’octobre 2025</strong> .</p>
             <p className="dark:text-white leading-7 dark:font-light text-sm md:text-xl/8 lg:text-sm/7 2xl:text-base/7 lg:w-lg"> <strong>Je recherche une entreprise</strong> où je pourrai renforcer mes compétences techniques tout en mettant à profit ma sensibilité à la communication et à l’expérience utilisateur.
             </p>
