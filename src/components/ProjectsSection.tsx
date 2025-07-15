@@ -1,12 +1,14 @@
-import html from '../assets/icon/html-icon-hover.svg'
-import css from '../assets/icon/css-icon-hover.svg'
-import js from '../assets/icon/javascript-icon-hover.svg'
-import php from '../assets/icon/php-icon-hover.svg'
-import sql from '../assets/icon/mysql-icon-hover.svg'
-import react from '../assets/icon/react-icon-hover.svg'
-import tailwind from '../assets/icon/tailwind-icon-hover.svg'
-import firebase from '../assets/icon/firebase.svg'
-import typescript from '../assets/icon/typescript-icon-hover.svg'
+import css from '../assets/icon/css-icon-hover.svg';
+import express from '../assets/icon/express-icon.svg';
+import firebase from '../assets/icon/firebase.svg';
+import html from '../assets/icon/html-icon-hover.svg';
+import js from '../assets/icon/javascript-icon-hover.svg';
+import node from '../assets/icon/node-icon.svg';
+import php from '../assets/icon/php-icon-hover.svg';
+import react from '../assets/icon/react-icon-hover.svg';
+import sql from '../assets/icon/mysql-icon-pequeno.svg';
+import tailwind from '../assets/icon/tailwind-icon-hover.svg';
+import typescript from '../assets/icon/typescript-icon-hover.svg';
 
 import Project from "./Project";
 
@@ -48,7 +50,7 @@ function ProjectSection() {
 
 
         <Project
-          title="Minutos - Backend"
+          title="Minutos - Backend en PHP"
           subtitle='Portail sécurisé pour clients et administrateurs.'
           description="Développement d'un espace client et d'un tableau de bord admin avec authentification sécurisée et gestion CRUD selon le modèle MVC orienté objet, conçu pour être modulaire et évolutif."
           img="/img/print-minutos-back.webp"
@@ -65,13 +67,22 @@ function ProjectSection() {
           site='https://focus-tomato.vercel.app/' />
 
         <Project
+          title="Minutos – API Backend Node.js"
+          subtitle="Application RESTful avec Express, MVC et authentification sécurisée (en cours)"
+          description="Développement d’une API modulaire pour la gestion des clients, avec Node.js, Express et une architecture MVC orientée objet. Authentification sécurisée, opérations CRUD et scalabilité au cœur du projet."
+          img="/img/print-api-minutos.jpg"
+          technologies={[node, express, sql]}
+          github='https://github.com/pmgoudet/minutos-telecom-node_react'
+        />
+
+        {/* <Project
           title="Mini-Portfolio Interactif"
           subtitle='Premier portfolio interactif inspiré du concept LinkTree.'
           description="Développement d'une page responsive en HTML, CSS et JavaScript pur, utilisant des data attributes pour faciliter l'interaction dynamique. Optimisé pour mobile et desktop."
           img="/img/print-linktree.webp"
           technologies={[html, css, js]}
           github='https://github.com/pmgoudet/LinkTree'
-          site='https://pmgoudet.vercel.app/' />
+          site='https://pmgoudet.vercel.app/' /> */}
 
       </div>
     </section>
