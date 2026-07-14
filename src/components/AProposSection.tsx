@@ -7,13 +7,11 @@ function AProposSection() {
 
       <div className='md:flex md:gap-4 md:items-start lg:gap-16 2xl:w-3/4 lg:m-auto lg:p-8 dark:text-white dark:font-light'>
         <div className='pb-4 md:p-0'>
-          <p className="pb-2">Franco-brésilien et installé en France, je me lance dans le développement web après quelques années dans le marketing et la relation client. Passionné par la technologie, j'adore l'idée de créer des solutions pratiques et utiles pour le quotidien.
+          <p className="pb-2">Franco-brésilien installé en France, je me suis tourné vers le développement après plusieurs années en marketing et relation client — une transition qui m'a appris à écouter un besoin avant de proposer une solution.
           </p>
-          <p className="pb-2">Mon parcours en publicité et marketing m’a naturellement conduit vers le développement web, un domaine où je peux combiner ma créativité avec des compétences techniques en front-end.
+          <p className="pb-2">J'aime autant la logique du back-end que le soin du détail visuel : j'ai conçu et développé plusieurs projets de bout en bout, du design à l'implémentation, en passant par ce portfolio lui-même. Mon expérience en communication m'aide à traduire un besoin flou en interface claire et en solution technique fiable.
           </p>
-          <p className="pb-2">L'esthétique est pour moi essentielle : je prête attention à chaque détail, convaincu qu'une interface soignée offre une expérience utilisateur fluide et agréable.
-          </p>
-          <p className="pb-2">Aujourd'hui, mon objectif est de m'intégrer pleinement dans le marché du développement web et de contribuer à des projets innovants, tout en mettant à profit mon énergie, mon organisation et ma capacité d'apprentissage rapide.
+          <p className="pb-2">Mon objectif aujourd'hui : <strong>continuer à apprendre</strong> au contact de vrais projets, et découvrir la direction technique qui me correspond le mieux.
           </p>
         </div>
 

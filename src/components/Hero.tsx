@@ -28,9 +28,10 @@ function Hero() {
           <div>
             <p className="text-2xl font-semibold dark:text-white md:text-4xl lg:text-3xl">Bonjour, je suis</p>
             <h1 className="text-4xl font-bold text-gradient-primary mb-2 md:text-6xl lg:text-5xl">Pedro Goudet</h1>
-            <h2 className="text-lg mb-6 dark:text-white md:text-3xl md:mt-4 lg:text-2xl">Développeur Web et Web Mobile</h2>
-            <p className="dark:text-white leading-7 dark:font-light text-sm md:text-xl/8 lg:text-sm/7 2xl:text-base/7 lg:w-lg">Titulaire d’une Licence en publicité et marketing et actuellement en fin de formation en Développement Web et Web mobile (RNCP niv. 5), je prépare une formation de Concepteur Développeur d’Applications (Titre professionnel de niveau 6 – Bac+3/4) <strong>en alternance, à partir d’octobre 2025</strong> .</p>
-            <p className="dark:text-white leading-7 dark:font-light text-sm md:text-xl/8 lg:text-sm/7 2xl:text-base/7 lg:w-lg"> <strong>Je recherche une entreprise</strong> où je pourrai renforcer mes compétences techniques tout en mettant à profit ma sensibilité à la communication et à l’expérience utilisateur.
+            <h2 className="text-lg mb-6 dark:text-white md:text-3xl md:mt-4 lg:text-2xl">Étudiant en informatique — CNAM Toulouse</h2>
+            <p className="dark:text-white leading-7 dark:font-light text-sm md:text-xl/8 lg:text-sm/7 2xl:text-base/7 lg:w-lg">Reconverti vers le développement après une Licence en publicité et marketing, je poursuis une Licence Informatique au <strong><a href="https://ipst.cnam.fr/">CNAM de Toulouse</a></strong>, en alternance chez <strong><a href="https://www.xelians.com/">Xelians Digital</a></strong> à partir de septembre 2026.
+            </p>
+            <p className="dark:text-white leading-7 dark:font-light text-sm md:text-xl/8 lg:text-sm/7 2xl:text-base/7 lg:w-lg"> Curieux et autonome, <strong>j'apprends en résolvant de vrais problèmes</strong> — sécuriser une authentification, structurer une API, automatiser un traitement de fichiers. Ma formation en communication m'aide à traduire un besoin flou en solution technique concrète.
             </p>
           </div>
           <div className="mt-6 flex justify-between md:justify-normal md:gap-12 md:mt-10 lg:mt-8">

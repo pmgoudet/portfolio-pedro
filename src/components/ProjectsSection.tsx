@@ -9,6 +9,9 @@ import react from '../assets/icon/react-icon-hover.svg';
 import sql from '../assets/icon/mysql-icon-pequeno.svg';
 import tailwind from '../assets/icon/tailwind-icon-hover.svg';
 import typescript from '../assets/icon/typescript-icon-hover.svg';
+import zip from '../assets/icon/zip-icon.png';
+import composer from '../assets/icon/composer-icon.svg';
+import excel from '../assets/icon/excel-icon.svg';
 
 import Project from "./Project";
 
@@ -31,12 +34,49 @@ function ProjectSection() {
         />
 
         <Project
+          title="Minutos Telecom - Backend en PHP"
+          subtitle='Portail sécurisé pour clients et administrateurs.'
+          description="Développement d'un espace client et d'un tableau de bord admin avec authentification sécurisée et gestion CRUD, structuré selon le modèle MVC orienté objet, base de données SQL."
+          img="/img/print-minutos-back.webp"
+          technologies={[php, sql, js]}
+          github='https://github.com/pmgoudet/minutos-telecom-backoffice'
+        />
+
+        <Project
+          title="Minutos Telecom – Refonte React/Node"
+          subtitle="Refonte full-stack avec authentification sécurisée (en cours)."
+          description="Architecture MVC en Node.js/Express (API RESTful), base de données SQL, frontend React. Frontend finalisé ; backend en cours de développement (CRUD complet, authentification sécurisée, pensé pour la scalabilité). Plus d'infos sur GitHub."
+          img="/img/print-minutos-node-react.webp"
+          technologies={[react, node, express, sql]}
+          github='https://github.com/pmgoudet/minutos-telecom-node_react'
+          site='https://minutos-telecom-react.vercel.app/'
+        />
+
+        <Project
           title="Portfolio Professionnel"
           subtitle="Premier portfolio axé sur l'UX/UI et le développement front-end."
           description="Projet de portfolio développé dans un but d'apprentissage, combinant React et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
           img="/img/print-portfolio.webp"
           technologies={[react, tailwind, typescript]}
           github='https://github.com/pmgoudet/portfolio-pedro'
+        />
+
+        <Project
+          title="Convertisseur TIFF → PDF"
+          subtitle="Automatisation par lot avec catalogage Excel."
+          description="Script PHP en ligne de commande : conversion TIFF vers PDF via Imagick, gestion individuelle des erreurs, catalogue Excel généré (PhpSpreadsheet), export final compressé en ZIP."
+          img="/img/print-converter-tif-pdf.webp"
+          technologies={[php, excel, zip]}
+          github='https://github.com/pmgoudet/converter-tif-pdf'
+        />
+
+        <Project
+          title="Music List Exporter"
+          subtitle="Analyse récursive d'une bibliothèque musicale et export vers Excel."
+          description="Projet personnel réalisé par curiosité afin d'approfondir mes compétences en PHP. Il parcourt récursivement une bibliothèque musicale, détecte les fichiers MP3, élimine les doublons, identifie les fichiers ne respectant pas le format attendu et génère un rapport Excel structuré avec plusieurs onglets."
+          img="/img/print-music-list.webp"
+          technologies={[php, composer, excel]}
+          github='https://github.com/pmgoudet/Excel-Music-List'
         />
 
         <Project
@@ -50,14 +90,6 @@ function ProjectSection() {
 
 
         <Project
-          title="Minutos - Backend en PHP"
-          subtitle='Portail sécurisé pour clients et administrateurs.'
-          description="Développement d'un espace client et d'un tableau de bord admin avec authentification sécurisée et gestion CRUD selon le modèle MVC orienté objet, conçu pour être modulaire et évolutif."
-          img="/img/print-minutos-back.webp"
-          technologies={[php, sql, js]}
-          github='https://github.com/pmgoudet/minutos-telecom-backoffice' />
-
-        <Project
           title="Focus Tomato"
           subtitle='Application de gestion du temps basée sur la méthode Pomodoro.'
           description="Application front-end pour gérer un minuteur Pomodoro avec CRUD de tâches, persistance via localStorage et glisser-déposer pour une meilleure expérience utilisateur."
@@ -66,14 +98,6 @@ function ProjectSection() {
           github='https://github.com/pmgoudet/focus-tomato'
           site='https://focus-tomato.vercel.app/' />
 
-        <Project
-          title="Minutos – API Backend Node.js"
-          subtitle="Application RESTful avec Express, MVC et authentification sécurisée (en cours)"
-          description="Développement d’une API modulaire pour la gestion des clients, avec Node.js, Express et une architecture MVC orientée objet. Authentification sécurisée, opérations CRUD et scalabilité au cœur du projet."
-          img="/img/print-api-minutos.jpg"
-          technologies={[node, express, sql]}
-          github='https://github.com/pmgoudet/minutos-telecom-node_react'
-        />
 
         {/* <Project
           title="Mini-Portfolio Interactif"
