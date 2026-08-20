@@ -23,6 +23,17 @@ function ProjectSection() {
 
       <div className='flex flex-col gap-12 md:flex-row md:justify-center md:flex-wrap'>
 
+
+        <Project
+          title="Minutos Telecom – Refonte React/Node"
+          subtitle="Refonte full-stack avec authentification sécurisée par JWT (en cours)."
+          description="Backend Node.js/Express (API RESTful, MySQL) en architecture par couches : JWT, rôles et autorisations, hachage bcrypt, soft delete. Frontend React en cours de connexion aux endpoints. Projet personnel mené en autonomie, pensé comme terrain d'apprentissage réel."
+          img="/img/print-minutos-node-react.webp"
+          technologies={[react, node, express, sql]}
+          github='https://github.com/pmgoudet/minutos-telecom-node_react'
+          site='https://minutos-telecom-react.vercel.app/'
+        />
+
         <Project
           title="Minutos Telecom"
           subtitle="Site institutionnel responsive, optimisé pour l'expérience utilisateur."
@@ -43,19 +54,9 @@ function ProjectSection() {
         />
 
         <Project
-          title="Minutos Telecom – Refonte React/Node"
-          subtitle="Refonte full-stack avec authentification sécurisée (en cours)."
-          description="Architecture MVC en Node.js/Express (API RESTful), base de données SQL, frontend React. Frontend finalisé ; backend en cours de développement (CRUD complet, authentification sécurisée, pensé pour la scalabilité). Plus d'infos sur GitHub."
-          img="/img/print-minutos-node-react.webp"
-          technologies={[react, node, express, sql]}
-          github='https://github.com/pmgoudet/minutos-telecom-node_react'
-          site='https://minutos-telecom-react.vercel.app/'
-        />
-
-        <Project
           title="Portfolio Professionnel"
           subtitle="Premier portfolio axé sur l'UX/UI et le développement front-end."
-          description="Projet de portfolio développé dans un but d'apprentissage, combinant React et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
+          description="Projet de portfolio développé dans un but d'apprentissage, combinant React, TypeScript et Tailwind CSS. Forte attention portée à l'ergonomie (UX) et à l'interface utilisateur (UI) pour offrir une expérience moderne et réactive."
           img="/img/print-portfolio.webp"
           technologies={[react, tailwind, typescript]}
           github='https://github.com/pmgoudet/portfolio-pedro'
